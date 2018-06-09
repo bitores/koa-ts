@@ -1,0 +1,61 @@
+{
+  "name": "koa2-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "./node_modules/.bin/tsc --watch",
+    "server":"./node_modules/.bin/nodemon dist/bootstrap/app.js --watch dist",
+    "docs": "./node_modules/.bin/apidoc -i server/ -o docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "apidoc": {
+    "name": "demo",
+    "version": "1.0.0",
+    "description": "这是一个简单的apidoc的demo",
+    "title": "API文档",
+    "url": "http://localhost:5000",
+    "sampleUrl": "http://localhost:5000",
+    "header": {
+      "title": "header"
+    },
+    "footer": {
+      "title": "footer"
+    },
+    "order": [
+      "Error",
+      "Define",
+      "PostTitleAndError",
+      "PostError"
+    ]
+  },
+  "dependencies": {
+    "apidoc": "^0.17.6",
+    "jsonwebtoken": "^8.2.1",
+    "koa": "^2.5.1",
+    "koa-body": "^2.5.0",
+    "koa-jwt": "^3.3.2",
+    "koa-log4": "^2.3.0",
+    "koa-proxy2": "^0.11.0",
+    "koa-router": "^7.4.0",
+    "koa-static2": "^0.1.8",
+    "koa-views": "^6.1.4",
+    "koa-views-render": "^0.0.1",
+    "koa2-cors": "^2.0.5",
+    "log4js": "^2.7.0",
+    "mysql2": "^1.5.3",
+    "node-schedule": "^1.3.0",
+    "nodemailer": "^4.6.5",
+    "nodemon": "^1.17.4",
+    "sequelize": "^4.37.8",
+    "typescript": "^2.8.3"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.45",
+    "@types/lodash": "^4.14.109",
+    "@types/node": "^10.1.2",
+    "lodash": "^4.17.10"
+  }
+}
